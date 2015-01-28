@@ -1,0 +1,23 @@
+
+<form ng-submit="signup(user)">
+	<div class="row">
+		<h2 class="h2">Sign Up</h2>
+		<div class="medium-6 columns centered">
+		<div class="error"  ng-hide="unauth()">Invalid Username/password</div>
+		<label class="error">{{message.usename}}
+        <input type="text" ng-model="user.name" class="form-control" ng-blur="checkUsername(0)" placeholder="Username" ng-required="!signin" ng-hide="signin">
+        </label>
+
+      <br/>
+        <label class="error">{{message.email}}
+        <input type="text" ng-model="user.email" class="form-control" ng-blur="checkUsername(1)" placeholder="Email address" required autofocus>
+        </label>
+
+      <br/>
+        <input type="password" ng-model="user.password" class="form-control" placeholder="Password" required>
+      <br/>
+        <button class="button" type="submit">Sign Up</button>
+
+		</div>
+	</div>
+</form>

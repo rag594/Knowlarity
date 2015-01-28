@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="medium-4 large-centered">
+  <h1 class="h1">Checkout</h1>
+  <div class="row" ng-repeat="order in currentOrder">
+    <div class="row panel">
+      Description: {{order.desc}}
+      <br/>
+      Quantity: {{order.quantity}}
+    </div>
+  </div>
+    <br/>
+  <div class="row">
+    <form class="">
+      <input type="text" ng-model="shipping.address" placeholder="Enter your phone Number (testing purpose only)" required=""/> <br/>
+      <button ng-click="checkout()"> Order </button>
+    </form>
+  </div>
+  </div>
+</div>

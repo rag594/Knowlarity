@@ -1,0 +1,12 @@
+<form ng-submit="login(user)">
+	<div class="row">
+		<h2 class="h2">Sign In</h2>
+		<div class="medium-6 columns centered">
+		<label class=""  placeholder="Email address" required autofocus>Email</label>
+		<input type="text" class="" ng-model="user.email" required autofocus placeholder="Email">
+		<label>Password</label>
+		<input type="password" ng-model="user.password" placeholder="Password" required>	
+		<input type="submit" class="button">
+		</div>
+	</div>
+</form>

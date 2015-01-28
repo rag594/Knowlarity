@@ -1,0 +1,11 @@
+<div class="row">
+<nav class="small-4 navigation columns ">
+<br />
+  <h1 class="h1">Categories</h1>
+  <ul class="side-nav" ng-repeat="category in categories ">
+    <li ng-click="openCategory()">{{category.name}}</li>
+  </ul>
+
+</nav>
+<div class="small-8 columns" ui-view></div>
+</div>
