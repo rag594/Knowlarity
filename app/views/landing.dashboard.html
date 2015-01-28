@@ -1,0 +1,39 @@
+<div class="row" ng-repeat="item in elements">
+
+
+	<div class="medium-4   columns">
+   <h1 class="h1" > {{item.item}}</h1>
+    <div class="row">
+    Quantity : <input type="number" ng-model="item.quantity"/>
+      <div class="row">
+        <div class="small-6 columns">
+    Price: {{item.price}}
+        </div>
+        <div class="small-6 columns">
+    Quantity Available: {{item.quant}}
+        </div>
+      </div>
+    </div>
+    <br/> <br/>
+    <div class="row">
+    <button ng-click="addToCart()">Add to cart</button>
+      </div>
+	</div>
+
+
+
+  <div class="medium-4 columns ">
+    <h1 class="h1">Cart</h1>
+    <div>
+      Quantity: {{cart.quantity}}
+    </div>
+
+    <div>
+      <button ng-click="checkout()"> Checkout</button>
+    </div>
+
+  </div>
+
+</div>
+
+
